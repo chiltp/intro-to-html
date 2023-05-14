@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--The <!DOCTYPE html> declaration defines that this document is an HTML5 document-->
+<!--All HTML documents must start with a <!DOCTYPE> declaration.-->
+<html lang="en">
+<!--The <html> element is the root element of an HTML page. It means <html tag> is the container for all other HTML elements-->    
+    <head>
+    <!--The <head> element contains metadata (data about data -  define the document title, character set, styles, scripts, and other meta information) about the HTML page-->    
+        <title>Chi is learning HTML</title>
+        <!--The <title> element (required in every HTML document) specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+    </head>
+    <body>
+    <!--The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->  
+    <!--There can only be one <body> element in an HTML document.-->      
+        <h1>HTML Introduction</h1>
+        <ul>
+            <li>HTML stands for HyperText Markup Language</li>
+            <li>HTML is a standard markup language for creating web pages</li>
+            <li>HTML describes the structure of a web page</li>
+            <li>HTML contains a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</li>
+            <!--This sentence means there are specific elements or tags that are used to identify and define different types of content that appear on a web page.-->
+            <!--For example, the <h1> tag is used to label a piece of content as a heading.-->
+        </ul>
+
+        <h1>HTML Elements</h1>
+        <p>The HTML element is everything from the start tag to the end tag.            
+        <!--<tagname>Content goes here...</tagname>-->
+        <p>Some notes:</p>
+        <strong>1. Nested HTML Elements</strong>: This means that one HTML element can be placed inside another element as a child element.<br>
+        <strong>2. Empty HTML Elements</strong>: HTML elements with no content<br>
+        <!--<br> tag defines a line break, and is an empty element without a closing tag-->
+        <strong>3. Never skip the End tag</strong>: Unexpected results and errors may occur if you forget the end tag!<br>
+        <strong>4. HTML is Not Case Sensitive</strong>: HTML tags are not case sensitive. However, lowercase in HTML is recommended.<br>
+
+        <h1>HTML Attributes</h1>
+        <il>
+            <li>All HTML elements can have attributes</li>
+            <li>Attributes provide additional information about elements</li>
+            <li>Attributes are always specified in the start tag</li>
+            <li>Attributes usually come in name/value pairs like: name="value"</li>
+        </il>
+
+        <h2>The href Attribute</h2>
+        <p>The 'a' tag defines a hyperlink. The 'href' attribute specifies the URL of the page the link goes to.</p>
+        <a href="https://www.facebook.com/chi.luongphuong">Chi's Facebook</a><br>
+        <a href="https://www.linkedin.com/in/luongthiphuongchi/">Chi's Linkedin</a>
+        
+        <h2>The src Attribute</h2>
+        <p>The 'img' tag is used to embed an image in an HTML page. The 'src' attribute specifies the path to the image to be displayed.</p>
+        <p>There are two ways to specify the URL in the src attribute:</p>
+        <p><strong>1. Absolute URL</strong> - Links to an external image that is hosted on another website.</p>
+         <img src="https://assets.epicurious.com/photos/628d02aef79b073d2fe4e130/1:1/w_2240,c_limit/Japanese%20Cheesecake%E2%80%94RECIPE.jpg" width="100" height="100">
+        <p><strong>2. Relative URL</strong> - Links to an image that is hosted within the website. Here, the URL does not include the domain name.</p>
+        <il>
+            <li>If the URL begins without a slash, it will be relative to the current page. Example: src="pic.jpg".</li>
+            <!--refers to a resource that is located in the same directory as the current document or file.-->
+            <p><img src="White Chocolate Cheesecake.webp" width="100" height="100"></p>
+
+            <li>If the URL begins with a slash, it will be relative to the domain. Example: src="/images/pic.jpg".</li>
+            <!--refers to a resource that is located in the root directory of the website.-->
+            <p><img src="/image/Japanese Cheesecake.webp" width="100" height="100"></p>
+        </il>
+
+        <h2>The width and height Attributes</h2>
+        <p>The <strong>img</strong> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels).</p>
+
+        <h2>The alt Attribute</h2>
+        <p>The required alt attribute for the <strong>alt</strong> tag specifies an alternate text for an <strong>image</strong>, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
+        <img src="cheesecake.jpg" alt="A delicious cheesecake">
+        
+        <h2>The style Attribute</h2>
+        <P>The style attribute is used to add styles to an element, such as color, font, size, and more.</P>
+        <p style="color:pink;">This is a pink paragraph.</p>
+
+        <h2>The lang Attribute</h2>
+        <p>You should always include the 'lang' attribute inside the 'html' tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+        <p>Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
+        <!--Example: <html lang="en-US">-->
+        
+        <h2>The title Attribute</h2>
+        <p>The 'title' attribute defines some extra information about an element.</p>
+        <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element.</p>
+        <p title="A tooltip will be displayed when User hovers the mouse on it" style="color:red">Hover me!</p>
+
+        <h2>Suggestions</h2>
+        <ul>
+            <li>Always Use Lowercase Attributes</li>
+            <li>Always Quote Attribute Values</li>
+            <li>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</li>
+        </ul>
+    </body>
+</html>
