@@ -6,46 +6,46 @@
     <body>
         <h1>1. HTML Headings</h1>
         <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
-        <p>HTML headings are defined with the <strong>&lt;h1&gt;</strong> - the most important heading to <strong>&lt;h6&gt;</strong> - the least important heading tags.</p>
+        <p>HTML headings are defined with the <code>&lt;h1&gt;</code> - the most important heading to <code>&lt;h6&gt;</code> - the least important heading tags.</p>
         <p>Bigger Headings: Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property.</p>
         <!--Example as below-->
         <h1 style="font-size:50px; color:pink;">Example for bigger Heading</h1>
         <hr>
 
         <h1>2. HTML Paragraphs</h1>
-        <p>The HTML <strong>&lt;p&gt;</strong> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
         <!--Example as below-->
-        <p style="color:fuchsia">This is a paragraph.</p>
-        <p style="color:hotpink">This is another paragraph.</p>
+            <p style="color:fuchsia">This is a paragraph.</p>
+            <p style="color:hotpink">This is another paragraph.</p>
 
-        <h2>2.1 HTML Display </h2>
+        <h3>HTML Display </h3>
             <ul>
                 <li>You cannot be sure how HTML will be displayed. Large or small screens, and resized windows will create different results.</li> 
                 <li>With HTML, you <strong>cannot change</strong> the display by adding extra spaces or extra lines in your HTML code.</li>    
                 <li>The browser will automatically remove any extra spaces and lines when the page is displayed</li>
             </ul>
         <!--Example as below-->
-        <p style="color:darksalmon">
+            <p style="color:darksalmon">
             This paragraph
             contains                     a lot of lines
             in  the source code,
             but the       browser                 
             ignores it.
-        </p>
+            </p>
 
-        <h2>2.2 HTML Horizontal Rules</h2>
-        <p>The <strong>hr</strong> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
-        <p>The <strong>hr</strong> element is used to separate content (or define a change) in an HTML page</p>
-        <p>The <strong>hr</strong> tag is an empty tag, which means that it has no end tag.</p>
+        <h3>HTML Horizontal Rules</h3>
+        <p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+        <p>The <code>&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML page</p>
+        <p>The <code>&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
         <!--TLTR: <hr> which stands for horizontal rule, defines a thematic change in the content-->
         <!--See example in 2.1 and 2.3-->
     
-        <h2>2.3 The HTML pre Element</h2>
-        <p>The HTML <strong>&lt;pre&gt;</strong> element defines preformatted text.
-        <p></p>The text inside a <strong>&lt;pre&gt;</strong> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</p>
+        <h3>The HTML pre Element</h3>
+        <p>The HTML <code>&lt;pre&gt;</code> element defines preformatted text.
+        <p></p>The text inside a <code>&lt;pre&gt;</code> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</p>
         <!--TLTR: <pre> which stands for preformatted text, defines pre-formatted text with both space and line break are maintained-->
         <!--Example as below-->
-        <pre style="color:palevioletred">
+            <pre style="color:palevioletred">
             My Bonnie lies over the ocean.
 
             My Bonnie lies over the sea.
@@ -53,12 +53,94 @@
             My Bonnie lies over the ocean.
           
             Oh, bring back my Bonnie to me.
-        </pre>
+            </pre>
         <hr>
 
         <h1>3. HTML Styles</h1>
-        <p>The HTML <strong>style</strong> attribute is used to add styles to an element, such as color, font, size, and more.</p>
-        <p>The HTML <strong>style</strong> attribute has the following syntax:</p>
-        <pre style="color: teal;">&lt;<em>tagname</em> style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;</pre>
+        <p>The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+        <p>The HTML <code>style</code> attribute has the following syntax:</p>
+            <pre style="color: teal;">&lt;<em>tagname</em> style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;</pre>
+        
+        <h3>Background Color</h3>
+        <p>The CSS <code>background-color</code> property defines the background color for an HTML element.</p>
+            <p style="background-color:lightblue;">This is a paragraph has light blue color background</p>
+        
+        <h3>Text Color</h3>
+        <p>The CSS <code>color</code> property defines the text color for an HTML element.</p>
+            <a style="color:darkcyan;" href="https://www.w3schools.com/html/html_styles.asp">This is a hyperlink has dark cyan color.</a>
+
+        <h3>Fonts</h3>
+        <p>The CSS <code>font-family</code> property defines the font to be used for an HTML element.</p>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This is a paragraph using Franklin Gothic Medium font</p>
+
+        <h3>Text Size</h3>
+        <p>The CSS <code>font-size</code> property defines the text size for an HTML element.</p>
+            <p style="font-size:smaller;">Hello guys, Chi is learning HTML.</p>
+            <a href ="https://docs.emmet.io/cheat-sheet/" style="font-size: 50%;">This is a hyperlink has font-size = 50%</a>
+
+        <h3>Text Alignment</h3>
+        <p>The CSS <code>text-align</code> property defines the horizontal text alignment for an HTML element.</p>
+            <p style="text-align:center;">Bonjour, ça va?</p>
+
+        <hr>    
+        <h1>3. HTML Text Formatting</h1>
+        <h3>HTML &lt;b&gt; and &lt;strong&gt; Elements</h3>
+        <!--lt stand for less than, wheares gt stands for greater than-->
+        <p>The HTML <code>b</code> element defines bold text, without any extra importance.</p>
+            <b>This text is bold</b><br>
+        <p>The HTML <code>strong</code>  element defines text with strong importance. The content inside is typically displayed in bold.</p>
+            <strong>This text is important!</strong>
+        <!--The key difference between <strong> and <b> lies in their semantic meaning. <strong> is used to indicate the importance or significance of content, while <b> is used for visual emphasis or styling without any particular semantic significance.-->
+        
+        <h3>HTML &lt;i&gt; and &lt;em&gt; Elements</h3>
+        <p>The HTML <code>i</code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+        <!--The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.-->
+            <i>This text is italic</i>
+        <p>The HTML <code>em</code> element defines emphasized text. The content inside is typically displayed in italic.</p>
+        <!--A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.-->
+            <em>This text is emphasized</em>
+        <!--The <i> element is used for presentational purposes, applying italic styling to the enclosed text, while the <em> element is used to semantically emphasize text, indicating a higher level of importance or significance.-->
+        
+        <h3>HTML &lt;small&gt; Element</h3>
+        <p>The HTML <code>small</code> element defines smaller text.</p>
+            <small>This is some smaller text.</small>
+        
+        <h3>HTML &lt;mark&gt; Element</h3>
+        <p>The HTML <code>mark</code> element defines text that should be marked or highlighted.</p>
+            <mark>Don't forget to learn HTML everyday.</mark>
+
+        <h3>HTML &lt;del&gt; Element</h3>
+        <p>The HTML <code>del</code> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
+            <p>My favorite color is <del style="color: palevioletred;">pink</del> <span style="color:gold">yellow</span>.</p>
+        
+        <h3>HTML &lt;ins&gt; Element</h3>
+        <p>The HTML <code>ins</code> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
+            <p>My favorite activities are <ins>lyra hoop</ins>.</p>
+        
+        <h3>HTML &lt;sub&gt; and &lt;sup&gt; Elements</h3>
+        <p>The HTML <code>sub</code> element defines subscript text.</p>
+        <!--Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.-->
+            <p>This is <sub>subscripted</sub> text.</p>
+        <p>The HTML <code>sup</code> element defines superscript text.</p>
+        <!--Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW.-->
+            <p>This is <sup> superscripted</sup> text.</p> 
+        <hr>
+
+        <h1>4. HTML Colors</h1>
+        <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+        <h2>Color</h2>
+        <!--HTML supports 140 standard colors-->
+        <ol>
+            <li>Background Color: <p style="background-color:Tomato;">This sentence has tomato color background</p></li>
+            <li>Text Color: <p style="color:darkcyan;">This is Darkcyan text</p></li>
+            <li>Border Color: <p style="border: solid 1px limegreen;">This text has a limegreen border</p></li>
+            <li>Color Values: In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</li>
+        </ol>
+        <h2>RGB</h2>
+        
+
+
+
+
     </body>
 </html>
