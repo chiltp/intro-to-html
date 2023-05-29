@@ -83,7 +83,7 @@
             <p style="text-align:center;">Bonjour, ça va?</p>
 
         <hr>    
-        <h1>3. HTML Text Formatting</h1>
+        <h1>4. HTML Text Formatting</h1>
         <h3>HTML &lt;b&gt; and &lt;strong&gt; Elements</h3>
         <!--lt stand for less than, wheares gt stands for greater than-->
         <p>The HTML <code>b</code> element defines bold text, without any extra importance.</p>
@@ -126,9 +126,10 @@
             <p>This is <sup> superscripted</sup> text.</p> 
         <hr>
 
-        <h1>4. HTML Colors</h1>
+        <h1>5. HTML Colors</h1>
         <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
-        <h2>Color</h2>
+        
+        <h2>5.1 Color</h2>
         <!--HTML supports 140 standard colors-->
         <ol>
             <li>Background Color: <p style="background-color:Tomato;">This sentence has tomato color background</p></li>
@@ -136,11 +137,63 @@
             <li>Border Color: <p style="border: solid 1px limegreen;">This text has a limegreen border</p></li>
             <li>Color Values: In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</li>
         </ol>
-        <h2>RGB</h2>
-        
 
+        <h2>5.2 RGB and RGBA Colors</h2>
 
+        <h3>RGB</h3>
+        <p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+        <p style="text-align: center;"><strong>rgb(red, green, blue)</strong></p>
+        <p>Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+        <br>This means that there are 256 x 256 x 256 = 16777216 possible colors!</p>
+        <ul>
+            <li>rgb(255, 0, 0) is displayed as <span style="color:rgb(255,0,0);">red</span></li>
+                <!--because red is set to its highest value (255), and the other two (green and blue) are set to 0.-->
+            <li>rgb(0, 255, 0) is displayed as <span style="color:rgb(0,255,0);">green</span></li>
+                <!--because green is set to its highest value (255), and the other two (red and blue) are set to 0.-->
+            <li>rgb(0, 0, 0) is displayed as <span style="color:rgb(0,0,0);">black</span></li>
+                <!--because white is the combination of all colors at their maximum intensity.-->
+            <li>rgb(255, 255, 255 )is displayed as <span style="color:rgb(255,255,255)"></span></li>
+                <!--because black is the absence of any light or color.-->
+        </ul>
+        <h3>Shades of Gray</h3>
+        <p>Shades of gray are often defined using equal values for all three parameters.</p>
+        <!--Example as below-->
+        <p style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</p>
+        <p style="background-color:rgb(150, 150, 150);">rgb(150, 150, 150)</p>
 
+        <h3>RGBA</h3>
+        <p>RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.</p>
+        <p style="text-align: center;"><strong>rgba(red, green, blue, alpha)</strong></p>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+        <p style="color:rgba(255,15,5,0.5)">This is a text has rgba(255,15,5,0.5)</p>
 
+        <h2>5.3 HEX Colors</h2>
+        <h3>HEX</h3>
+        <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+        <p>In HTML, a color can be specified using a hexadecimal value in the form:</p>
+        <p style="text-align: center;"><strong>#rrggbb</strong></p>
+        <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+        <ul>
+            <li>#ff0000 is displayed as <span style="color:#ff0000">red</span></li>
+            <li>#00ff00 is displayed as <span style="color:#00ff00">green</span></li>
+            <li>#000000 is displayed as <span style="color:#000000">black</span></li>
+            <li>#ffffff is displayed as <span style="color:#ffffff">white</span></li>
+        </ul>
+
+        <h3>Shades of Gray</h3>
+        <p>Shades of gray are often defined using equal values for all three parameters.</p>
+        <!--Example as below-->
+        <p style="background-color: #909090;">This is a text has a background color #909090</p>
+
+        <h2>5.4 HSL and HSLA Colors</h2>
+        <h3>HSL</h3>
+        <p>HSL stands for hue, saturation, and lightness.</p>
+        <p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+        <p style="text-align: center;"><strong>hsl(hue, saturation, lightness)</strong></p>
+        <ul>
+            <li>Hue can be described as the actual color we perceive, such as red, blue, green, etc. It is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
+            <li>Saturation can be described as the intensity of a color. 0% is completely gray, and 100% is is pure color, no shades of gray.</li>
+            <li>Lightness can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white).</li>
+        </ul>
     </body>
 </html>
