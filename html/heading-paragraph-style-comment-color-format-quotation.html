@@ -90,7 +90,7 @@
             <b>This text is bold</b><br>
         <p>The HTML <code>strong</code>  element defines text with strong importance. The content inside is typically displayed in bold.</p>
             <strong>This text is important!</strong>
-        <!--The key difference between <strong> and <b> lies in their semantic meaning. <strong> is used to indicate the importance or significance of content, while <b> is used for visual emphasis or styling without any particular semantic significance.-->
+        <!--The key difference between <strong> and <b> lies in their semantic meaning. <strong> is used to indicate the importance or significance of content, used for accessibility, while <b> is used for visual emphasis or styling without any particular semantic significance.-->
         
         <h3>HTML &lt;i&gt; and &lt;em&gt; Elements</h3>
         <p>The HTML <code>i</code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
@@ -165,7 +165,7 @@
         <p>RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.</p>
         <p style="text-align: center;"><strong>rgba(red, green, blue, alpha)</strong></p>
         <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
-        <p style="color:rgba(255,15,5,0.5)">This is a text has rgba(255,15,5,0.5)</p>
+        <p style="color:rgba(255,15,5,0.5)">This is a text has rgba(255, 15, 5, 0.5)</p>
 
         <h2>5.3 HEX Colors</h2>
         <h3>HEX</h3>
@@ -192,8 +192,68 @@
         <p style="text-align: center;"><strong>hsl(hue, saturation, lightness)</strong></p>
         <ul>
             <li>Hue can be described as the actual color we perceive, such as red, blue, green, etc. It is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
-            <li>Saturation can be described as the intensity of a color. 0% is completely gray, and 100% is is pure color, no shades of gray.</li>
+                <!--Example as below-->
+                <p style="color:hsl(0,100%,50%)">This is a text having hsl(0, 100%, 50%)</p>
+                <p style="color:hsl(120,50%,50%)">This is a text having hsl(120, 50%, 50%)</p>
+                <p style="color:hsl(240,100%,50%)">This is a text having hsl(240, 100%, 50%)</p>
+            <li>Saturation can be described as the intensity of a color. 0% is completely gray, 50% is 50% gray, but you can still see the color and 100% is is pure color, no shades of gray.</li>
+                <!--Example as below-->
+                <p style="color:hsl(0, 0%, 50%)">This is a text having hsl(0, 0%, 50%)</p>
+                <p style="color:hsl(155, 50%, 50%)">This is a text having hsl(155, 50%, 50%)</p>
+                <p style="color:hsl(25, 100%, 50%)">This is a text having hsl(25, 100%, 50%)</p>
             <li>Lightness can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white).</li>
+                <!--Example as below-->
+                <p style="background-color:hsl(0,100%,0%);">This is a text having hsl(15, 10%, 50%)</p>
+                <p style="background-color:hsl(120,100%,50%);">This is a text having hsl(120, 100%, 50%)</p>
+                <p style="background-color:hsl(240,30%,100%);">This is a text having hsl(240, 30%, 100%)</p>
         </ul>
+
+        <h3>Shades of Gray</h3>
+        <p>Shades of gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades.</p>
+        <p style="color:hsl(0, 0%, 50%)"> A text having hsl(0, 0%, 50%)</p>
+
+        <h3>HSLA</h3>
+        <p>HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color. An HSLA color value is specified with:</p>
+        <p style="text-align: center";><strong>hsla(hue, saturation, lightness, alpha)</strong></p>
+        <p style="color: hsla(9, 100%, 64%, 0.2)">This is a text having hsla(9, 100%, 64%, 0.2)</p>
+        <hr>
+
+        <h1>6. HTML Quotation and Citation Elements</h1>
+        <h3>HTML &lt;blockquote&gt; for Quotations</h3>
+        <p>The HTML <code>blockquote</code> element defines a section that is quoted from another source.</p>
+        <!--Example as below-->
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+            </blockquote>
+        
+        <h3>HTML &lt;q&gt; for Short Quotations</h3>
+        <p>Browsers normally insert quotation marks around the quotation.</p>
+        <!--Example as below-->
+            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <h3>HTML &lt;abbr&gt; for Abbreviations</h3>
+        <p>The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+        <p>Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.</p>
+        <!--Example as below-->
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <h3>HTML &lt;address&lt; for Contact Information</h3>
+        <ul>
+            <li>The HTML <code>address</code> tag defines the contact information for the author/owner of a document or an article.</li>
+            <li>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</li>
+            <li>The text in the <code>address</code> element usually renders in italic, and browsers will always add a line break before and after the <code>address</code> element.</li>
+        </ul>
+        <!--Example as below-->
+        <address>
+            Written by Chi Luong.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <h3>HTML &lt;cite&gt; for Work Title</h3>
+        <p></p>
     </body>
 </html>
