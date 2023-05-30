@@ -84,44 +84,52 @@
 
         <hr>    
         <h1>4. HTML Text Formatting</h1>
-        <h3>HTML &lt;b&gt; and &lt;strong&gt; Elements</h3>
+        <h3>4.1 HTML &lt;b&gt; and &lt;strong&gt; Elements</h3>
         <!--lt stand for less than, wheares gt stands for greater than-->
-        <p>The HTML <code>b</code> element defines bold text, without any extra importance.</p>
+        <p style="background-color: beige;">The HTML <code>b</code> element defines bold text, without any extra importance.</p>
             <b>This text is bold</b><br>
-        <p>The HTML <code>strong</code>  element defines text with strong importance. The content inside is typically displayed in bold.</p>
-            <strong>This text is important!</strong>
-        <!--The key difference between <strong> and <b> lies in their semantic meaning. <strong> is used to indicate the importance or significance of content, used for accessibility, while <b> is used for visual emphasis or styling without any particular semantic significance.-->
+        <p style="background-color: beige;">The HTML <code>strong</code>  element defines text with strong importance. The content inside is typically displayed in bold.</p>
+            <strong>Important:</strong> Before proceeding, make sure you add plenty of butter.
+        <!-- Differences between <strong> and <be>
+            - The <strong> element is for content that is of "strong importance", including things of great seriousness or urgency (such as warnings).
+            - Use the <b> for cases like keywords in a summary, product names in a review, or other spans of text.
+        -->
         
-        <h3>HTML &lt;i&gt; and &lt;em&gt; Elements</h3>
-        <p>The HTML <code>i</code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+        <h3> 4.2 HTML &lt;i&gt; and &lt;em&gt; Elements</h3>
+        <p style="background-color: beige;">The HTML <code>i</code> element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, among others.</p>
+        <p> Example: "The <i>Queen Mary</i> sailed last night". Here, there is no added emphasis or importance on the word "Queen Mary". It is merely indicated that the object in question is not a queen named Mary, but a ship named <i>Queen Mary</i>. Another example for &lt;i&gt; could be: "The word <i>the</i> is an article".</p>
         <!--The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.-->
-            <i>This text is italic</i>
-        <p>The HTML <code>em</code> element defines emphasized text. The content inside is typically displayed in italic.</p>
-        <!--A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.-->
-            <em>This text is emphasized</em>
-        <!--The <i> element is used for presentational purposes, applying italic styling to the enclosed text, while the <em> element is used to semantically emphasize text, indicating a higher level of importance or significance.-->
         
-        <h3>HTML &lt;small&gt; Element</h3>
-        <p>The HTML <code>small</code> element defines smaller text.</p>
+        <p style="background-color: beige;">The HTML <code>em</code> element element marks text that has stress emphasis.</p>
+        <p> Example: "Just <em>do</em> it already!", or: "We <em>had</em> to do something about it". A person or software reading the text would pronounce the words in italics with an emphasis, using verbal stress.</p>
+        <!--A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.-->
+        <p>By default, the visual result is the same. However, the semantic meaning is different.</p>
+        <ul>
+            <li>Use the &lt;i&gt; element for text that is set off from the normal prose for readability reasons. (technical terms, thoughts such as "She wondered, What is this writer talking about, anyway?")</li>
+            <li>The &lt;em&gt; element represents stress emphasis of its contents.</li>
+        </ul>
+        
+        <h3>4.3 HTML &lt;small&gt; Element</h3>
+        <p style="background-color: beige;">The HTML <code>small</code> element represents side-comments and small print, like copyright and legal text, independent of its styled presentation.</p>
             <small>This is some smaller text.</small>
         
-        <h3>HTML &lt;mark&gt; Element</h3>
-        <p>The HTML <code>mark</code> element defines text that should be marked or highlighted.</p>
+        <h3>4.4 HTML &lt;mark&gt; Element</h3>
+        <p style="background-color: beige;">The HTML <code>mark</code> element defines text that should be marked or highlighted.</p>
             <mark>Don't forget to learn HTML everyday.</mark>
 
-        <h3>HTML &lt;del&gt; Element</h3>
-        <p>The HTML <code>del</code> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
+        <h3>4.5 HTML &lt;del&gt; Element</h3>
+        <p  style="background-color: beige;">The HTML <code>del</code> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
             <p>My favorite color is <del style="color: palevioletred;">pink</del> <span style="color:gold">yellow</span>.</p>
         
-        <h3>HTML &lt;ins&gt; Element</h3>
-        <p>The HTML <code>ins</code> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
-            <p>My favorite activities are <ins>lyra hoop</ins>.</p>
+        <h3>4.6 HTML &lt;ins&gt; Element</h3>
+        <p style="background-color: beige;">The HTML <code>ins</code> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
+            <p>My favorite activity is <ins>coding</ins>.</p>
         
-        <h3>HTML &lt;sub&gt; and &lt;sup&gt; Elements</h3>
-        <p>The HTML <code>sub</code> element defines subscript text.</p>
+        <h3>4.7 HTML &lt;sub&gt; and &lt;sup&gt; Elements</h3>
+        <p style="background-color: beige;">The HTML <code>sub</code> element defines subscript text.</p>
         <!--Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.-->
             <p>This is <sub>subscripted</sub> text.</p>
-        <p>The HTML <code>sup</code> element defines superscript text.</p>
+        <p style="background-color: beige;">The HTML <code>sup</code> element defines superscript text.</p>
         <!--Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW.-->
             <p>This is <sup> superscripted</sup> text.</p> 
         <hr>
@@ -238,22 +246,33 @@
         <!--Example as below-->
             <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
-        <h3>HTML &lt;address&lt; for Contact Information</h3>
+        <h3>HTML &lt;address&gt; for Contact Information</h3>
         <ul>
             <li>The HTML <code>address</code> tag defines the contact information for the author/owner of a document or an article.</li>
             <li>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</li>
             <li>The text in the <code>address</code> element usually renders in italic, and browsers will always add a line break before and after the <code>address</code> element.</li>
         </ul>
         <!--Example as below-->
-        <address>
+            <address>
             Written by Chi Luong.<br>
             Visit us at:<br>
             Example.com<br>
             Box 564, Disneyland<br>
             USA
-        </address>
+            </address>
 
         <h3>HTML &lt;cite&gt; for Work Title</h3>
-        <p></p>
+        <p>The HTML <code>cite</code> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+        <p>The text in the <code>cite</code> element usually renders in italic.</p>
+        <!--Example as below-->
+            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+        <h3>HTML &lt;bdo&gt; for Bi-Directional Override</h3>
+        <p>BDO stands for Bi-Directional Override. The HTML <code>bdo</code> tag is used to override the current text direction</p>
+        <!--Example as below-->
+            <bdo dir="rtl">This text will be written from right to left.</bdo>
+
+
+
     </body>
 </html>
